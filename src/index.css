@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Share+Tech&display=swap");
+
+@import "tailwindcss";
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+a {
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+
+  @theme {
+    --font-share: Share Tech, sans-serif;
+  }
+  @theme {
+    --font-fira: Fira Code, sans-serif;
+  }
+}
+
+.arrow-hover:hover .right {
+  position: relative;
+  left: 2px;
+  transition: all;
+}
+
+.arrow-hover:hover .left {
+  position: relative;
+  right: 2px;
+  transition: all;
+}
