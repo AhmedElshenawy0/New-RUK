@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "pricing": "Tarifs",
+    "services": "Services",
+    "login": "Connexion",
+    "signup": "S'inscrire"
+  },
+  "main": {
+    "title": "Infrastructure haute performance pour",
+    "description": "Déployez des applications intensives sur GPU, CPU et accélérateurs en quelques minutes – déployez dans plus de 50 emplacements",
+    "getStarted": "Commencer",
+    "talkToExpert": "Parlez à un expert",
+    "welcome": "Bienvenue sur mon portfolio !"
+  },
+  "aboutSection": {
+    "badgeHeading": "À propos de Rikaz",
+    "paragraph1": "Rikaz est votre partenaire d'infrastructure de confiance pour construire et faire évoluer des applications full stack haute performance. Que vous déployiez des agents alimentés par l'IA, des modèles affinés ou des pipelines de données en temps réel, Rikaz offre la puissance, la fiabilité et la rapidité pour donner vie à votre vision.",
+    "paragraph2": "Notre mission est de rendre la technologie de pointe accessible et conviviale pour les développeurs. Rejoignez les équipes du monde entier qui choisissent Rikaz pour déployer leurs idées ambitieuses plus rapidement."
+  },
+  "pricingSection": {
+    "heading": "Plans tarifaires",
+    "subheading": "Choisissez un plan adapté à votre échelle — que vous construisiez votre première application ou que vous déployiez à l'international.",
+    "plans": [
+      {
+        "name": "Débutant",
+        "price": "9 $",
+        "priceSuffix": "/mois",
+        "description": "Parfait pour les projets personnels ou MVP.",
+        "features": [
+          "1 projet",
+          "Calcul de base",
+          "5 Go de stockage",
+          "Support communautaire"
+        ],
+        "button": {
+          "text": "Commencer"
+        },
+        "highlight": false
+      },
+      {
+        "name": "Pro",
+        "price": "29 $",
+        "priceSuffix": "/mois",
+        "description": "Pour les équipes en croissance et les produits à grande échelle.",
+        "features": [
+          "Projets illimités",
+          "Calcul avancé",
+          "100 Go de stockage",
+          "Support prioritaire"
+        ],
+        "button": {
+          "text": "Passer à Pro"
+        },
+        "highlight": true,
+        "badgeText": "Le plus populaire"
+      },
+      {
+        "name": "Entreprise",
+        "price": "Personnalisé",
+        "priceSuffix": "",
+        "description": "Solutions personnalisées pour des besoins à grande échelle.",
+        "features": [
+          "Déploiements personnalisés",
+          "GPU/TPU haute performance",
+          "Stockage illimité",
+          "Support dédié"
+        ],
+        "button": {
+          "text": "Contactez les ventes"
+        },
+        "highlight": false
+      }
+    ]
+  },
+  "servicesSectionTitle": "Nos services",
+  "servicesSectionHeading": "Favoriser l'innovation",
+  "servicesSectionDescription": "Offrir aux développeurs et aux équipes une infrastructure haute performance, des outils évolutifs et des services intelligents alimentés par l'IA.",
+  "services": [
+    {
+      "title": "Déploiements instantanés",
+      "desc": "Lancez des applications full stack ou des modèles IA en quelques secondes sur une infrastructure mondiale.",
+      "img": "/aboutimg5.jpg",
+      "alt": "Déploiement"
+    },
+    {
+      "title": "Hébergement d'agents IA",
+      "desc": "Hébergez et mettez à l'échelle facilement des agents IA avec une inférence sécurisée et un ajustement fin.",
+      "img": "/aboutimg6.jpg",
+      "alt": "IA"
+    },
+    {
+      "title": "APIs flexibles",
+      "desc": "APIs puissantes et outils pour l'automatisation, l'intégration et la montée en charge.",
+      "img": "/aboutimg3.jpg",
+      "alt": "API"
+    },
+    {
+      "title": "Outils personnalisés",
+      "desc": "Outils sur mesure pour l'automatisation d'entreprise et les flux de travail.",
+      "img": "/service3.jpg",
+      "alt": "Outils"
+    },
+    {
+      "title": "Analyse en temps réel",
+      "desc": "Obtenez des insights avec des tableaux de bord en temps réel et le suivi de l'utilisation.",
+      "img": "/service2.jpg",
+      "alt": "Analytique"
+    },
+    {
+      "title": "Infrastructure sécurisée",
+      "desc": "Échelle mondiale avec une sécurité éprouvée et la conformité.",
+      "img": "/service1.jpg",
+      "alt": "Sécurité"
+    }
+  ],
+  "footer": {
+    "brandName": "Rikaz",
+    "brandDescription": "Construisez et déployez des applications full stack avec rapidité, évolutivité et facilité.",
+    "linkGroups": {
+      "product": {
+        "title": "Produit",
+        "links": [
+          { "name": "Présentation", "href": "#" },
+          { "name": "Tarifs", "href": "#" },
+          { "name": "Fonctionnalités", "href": "#" },
+          { "name": "Historique des versions", "href": "#" }
+        ]
+      },
+      "resources": {
+        "title": "Ressources",
+        "links": [
+          { "name": "Docs", "href": "#" },
+          { "name": "Tutoriels", "href": "#" },
+          { "name": "Blog", "href": "#" },
+          { "name": "Référence API", "href": "#" }
+        ]
+      },
+      "company": {
+        "title": "Entreprise",
+        "links": [
+          { "name": "À propos", "href": "#" },
+          { "name": "Carrières", "href": "#" },
+          { "name": "Contact", "href": "#" },
+          { "name": "Confidentialité", "href": "#" }
+        ]
+      }
+    },
+    "copyright": "© {{year}} Rikaz. Tous droits réservés."
+  }
+}

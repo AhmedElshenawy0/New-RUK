@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Pricing",
+    "services": "Services",
+    "login": "Login",
+    "signup": "Sign Up"
+  },
+  "main": {
+    "title": "High-performance Infrastructure for",
+    "description": "Deploy intensive applications across GPUs, CPUs, and Accelerators in minutes - scale in 50+ locations",
+    "getStarted": "Get Started",
+    "talkToExpert": "Talk to an Expert",
+    "welcome": "Welcome to my portfolio!"
+  },
+  "aboutSection": {
+    "badgeHeading": "About Rikaz",
+    "paragraph1": "Rikaz is your trusted infrastructure partner for building and scaling high-performance full stack applications. Whether you're deploying AI-powered agents, fine-tuned models, or real-time data pipelines, Rikaz offers the power, reliability, and speed to bring your vision to life.",
+    "paragraph2": "Our mission is to make cutting-edge tech accessible and developer-friendly. Join teams around the world who choose Rikaz to deploy ambitious ideas faster."
+  },
+  "pricingSection": {
+    "heading": "Pricing Plans",
+    "subheading": "Choose a plan that fits your scale — whether you're building your first app or deploying globally.",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$9",
+        "priceSuffix": "/mo",
+        "description": "Perfect for personal projects or MVPs.",
+        "features": [
+          "1 Project",
+          "Basic Compute",
+          "5 GB Storage",
+          "Community Support"
+        ],
+        "button": {
+          "text": "Get Started"
+        },
+        "highlight": false
+      },
+      {
+        "name": "Pro",
+        "price": "$29",
+        "priceSuffix": "/mo",
+        "description": "For growing teams and scaling products.",
+        "features": [
+          "Unlimited Projects",
+          "Advanced Compute",
+          "100 GB Storage",
+          "Priority Support"
+        ],
+        "button": {
+          "text": "Upgrade Now"
+        },
+        "highlight": true,
+        "badgeText": "Most Popular"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "priceSuffix": "",
+        "description": "Custom solutions for large-scale needs.",
+        "features": [
+          "Custom Deployments",
+          "High Performance GPU/TPU",
+          "Unlimited Storage",
+          "Dedicated Support"
+        ],
+        "button": {
+          "text": "Contact Sales"
+        },
+        "highlight": false
+      }
+    ]
+  },
+  "servicesSectionTitle": "Our Services",
+  "servicesSectionHeading": "Empowering Innovation",
+  "servicesSectionDescription": "Empowering developers and teams with high-performance infrastructure, scalable tools, and intelligent AI-powered services.",
+  "services": [
+    {
+      "title": "Instant Deployments",
+      "desc": "Launch full-stack apps or AI models in seconds across global infrastructure.",
+      "img": "/aboutimg5.jpg",
+      "alt": "Deploy"
+    },
+    {
+      "title": "AI Agent Hosting",
+      "desc": "Seamlessly host and scale AI agents with secure inference and fine-tuning.",
+      "img": "/aboutimg6.jpg",
+      "alt": "AI"
+    },
+    {
+      "title": "Flexible APIs",
+      "desc": "Powerful APIs and developer tools for automation, integration, and scaling.",
+      "img": "/aboutimg3.jpg",
+      "alt": "API"
+    },
+    {
+      "title": "Custom Tools",
+      "desc": "Tailor-made tools for enterprise automation and workflows.",
+      "img": "/service3.jpg",
+      "alt": "Tools"
+    },
+    {
+      "title": "Real-time Analytics",
+      "desc": "Gain insights with real-time dashboards and usage tracking.",
+      "img": "/service2.jpg",
+      "alt": "Analytics"
+    },
+    {
+      "title": "Secure Infrastructure",
+      "desc": "Scale globally with battle-tested security and compliance.",
+      "img": "/service1.jpg",
+      "alt": "Security"
+    }
+  ],
+  "footer": {
+    "brandName": "Rikaz",
+    "brandDescription": "Build and deploy full stack applications with speed, scalability, and ease.",
+    "linkGroups": {
+      "product": {
+        "title": "Product",
+        "links": [
+          { "name": "Overview", "href": "#" },
+          { "name": "Pricing", "href": "#" },
+          { "name": "Features", "href": "#" },
+          { "name": "Changelog", "href": "#" }
+        ]
+      },
+      "resources": {
+        "title": "Resources",
+        "links": [
+          { "name": "Docs", "href": "#" },
+          { "name": "Tutorials", "href": "#" },
+          { "name": "Blog", "href": "#" },
+          { "name": "API Reference", "href": "#" }
+        ]
+      },
+      "company": {
+        "title": "Company",
+        "links": [
+          { "name": "About", "href": "#" },
+          { "name": "Careers", "href": "#" },
+          { "name": "Contact", "href": "#" },
+          { "name": "Privacy", "href": "#" }
+        ]
+      }
+    },
+    "copyright": "© {{year}} Rikaz. All rights reserved."
+  }
+}

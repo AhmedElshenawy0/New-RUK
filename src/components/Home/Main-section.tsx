@@ -1,7 +1,8 @@
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import { motion } from "framer-motion";
 
-import { lazy } from "react";
+import { lazy, Suspense, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const LazyTypewriter = lazy(() => import("typewriter-effect"));
 
@@ -18,11 +19,14 @@ const MainSection = () => {
   ];
 
   const loopedItems = [...technologies, ...technologies];
+
+  const { t, i18n } = useTranslation();
+  const [activeId, setActiveId] = useState("main");
   return (
     <div className="relative z-10" id="main">
       <main className="text-black">
         <section className="flex flex-col items-center justify-center text-center px-8 py-20">
-          <motion.p
+          <motion.div
             className="text-4xl font-black uppercase mb-6 max-w-[500px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -31,24 +35,26 @@ const MainSection = () => {
             <div className="">
               High-performance Infrastructure for
               <span className="drop-shadow-md">
-                <LazyTypewriter
-                  onInit={(typewriter) => {
-                    typewriter
-                      .typeString("full stack apps.")
-                      .pauseFor(1500)
-                      .deleteAll()
-                      .typeString("fine tuning.")
-                      .pauseFor(1500)
-                      .deleteAll()
-                      .typeString("ai agents.")
-                      .pauseFor(2000)
-                      .start();
-                  }}
-                  options={{ loop: true, delay: 100 }}
-                />
+                <Suspense fallback={<span>Loading...</span>}>
+                  <LazyTypewriter
+                    onInit={(typewriter) => {
+                      typewriter
+                        .typeString("full stack apps.")
+                        .pauseFor(1500)
+                        .deleteAll()
+                        .typeString("fine tuning.")
+                        .pauseFor(1500)
+                        .deleteAll()
+                        .typeString("ai agents.")
+                        .pauseFor(2000)
+                        .start();
+                    }}
+                    options={{ loop: true, delay: 100 }}
+                  />
+                </Suspense>
               </span>
             </div>
-          </motion.p>
+          </motion.div>
 
           {/* Desc */}
           <motion.div
@@ -57,8 +63,7 @@ const MainSection = () => {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="max-w-[500px] font-medium font-fira"
           >
-            Deploy intensive applications across GPUs, CPUs, and Accelerators in
-            minutes - scale in 50+ locations
+            {t("main.description")}
           </motion.div>
 
           {/* Btns */}
@@ -68,7 +73,7 @@ const MainSection = () => {
               className="bg-[#2d2b2c] border-b-8 border-yellow-400 text-white px-4 pb-1 pt-2 font-semibold rounded-md opacity-90 transition lg:px-8 flex items-center"
             >
               <IoMdArrowDropright />
-              get started
+              {t("main.getStarted")}
             </a>
             <a
               href="#"
@@ -77,7 +82,7 @@ const MainSection = () => {
               <span className="right">
                 <IoMdArrowDropright />
               </span>
-              talk to an expert
+              {t("main.talkToExpert")}
               <span className="left">
                 <IoMdArrowDropleft />
               </span>
@@ -96,7 +101,10 @@ const MainSection = () => {
                   <img
                     src={tech.logo}
                     alt={tech.name}
+                    width={80}
+                    height={80}
                     className="w-20 h-20 mb-1"
+                    loading="lazy"
                   />
                 </div>
               ))}
